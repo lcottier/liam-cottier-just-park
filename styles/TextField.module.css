@@ -1,0 +1,107 @@
+
+
+.input {
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #8299b0;
+    text-decoration: underline;
+}
+
+.inputField {
+    margin: 16px 0;
+}
+
+.inputField>.field {
+    width: 100%;
+    font-size: 24px;
+    height: 80px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 56px;
+    padding-right: 15px;
+    outline: 0;
+    margin: 0;
+    margin-right: 2%;
+    vertical-align: bottom;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: solid 3px #b4c5ce;
+    color: #51565a;
+}
+
+.inputField>.field:focus {
+  border-radius: 8px;
+  border: solid 3px #00b303;
+}
+
+.inputField > .field::placeholder {
+  color: #8299b0;
+  font-weight: 300;
+}
+
+/* Icons */
+
+.iconPadlock {
+  position: absolute;
+  background-image: url("../public/images/padlock-icon.svg");
+  background-size: cover;
+  width: 26px;
+  height: 31px;
+  margin: 21px 15px;
+}
+
+.iconEmail {
+  position: absolute;
+  background-image: url("../public/images/email-icon.svg");
+  background-size: cover;
+  width: 26px;
+  height: 20px;
+  margin: 29px 15px;
+}
+
+@media only screen and (max-width: 600px) {
+    .input {
+        margin-top: 25px;
+    }
+  
+    .title {
+      font-size: 12px;
+    }
+    
+    .subtitle {
+      font-size: 7px;
+    }
+
+    .inputField {
+        margin: 8px 0;
+    }
+
+    .inputField>.field {
+        font-size: 12px;
+        height: 40px;
+        padding-left: 36px;
+    }
+
+    .iconPadlock {
+        width: 14px;
+        height: 16px;
+        margin: 12px 13.5px;
+    }
+
+    .iconEmail {
+        width: 14px;
+        height: 11px;
+        margin: 15px 13.5px;
+    }
+}

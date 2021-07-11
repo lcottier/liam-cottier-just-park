@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import TextField from './text-field'
 
 export default function Home() {
   return (
@@ -12,29 +12,21 @@ export default function Home() {
 
       <main className={styles.main}>
         <div className={styles.body}>
-          <img src="/images/just-park-logo.png" alt="Logo" />
+          <div>
+            <img src="/images/just-park-logo.png" alt="Logo" />
+          </div>
 
-          <div className={styles.grid}>
-            <a href="https://nextjs.org/docs" className={styles.card}>
-              <h2>Documentation &rarr;</h2>
-              <p>Find in-depth information about Next.js features and API.</p>
-            </a>
-
-            <a
-              href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              className={styles.card}
-            >
-              <h2>Deploy &rarr;</h2>
-              <p>
-                Instantly deploy your Next.js site to a public URL with Vercel.
-              </p>
-            </a>
+          <div>
+            <h1 className={styles.title}>Sign In</h1>
+            <TextField title="User name" placeholder="Enter User name" icon="iconEmail"></TextField>
+            <TextField icon="iconPadlock" title="Password" placeholder="Enter Password" subtitle="Forgot Password?"></TextField>
+            <button className={styles.button}>Sign In</button>
           </div>
         </div>
         <div className={styles.sideImage}>
           <img src="/images/login-side-image.png" alt="side-image" />
         </div>
       </main>
-    </div>
+    </div >
   )
 }

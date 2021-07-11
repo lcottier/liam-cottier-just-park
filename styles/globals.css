@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap');
+
 html,
 body {
   padding: 0;
@@ -14,4 +16,5 @@ a {
 * {
   box-sizing: border-box;
   font-family: Roboto;
+  color: #51565a;
 }
