@@ -16,7 +16,7 @@ export default function Home() {
             <img src="/images/just-park-logo.png" alt="Logo" />
           </div>
 
-          <div>
+          <div className="width-100">
             <h1 className={styles.title}>Sign In</h1>
             <TextField title="User name" placeholder="Enter User name" icon="iconEmail"></TextField>
             <TextField icon="iconPadlock" title="Password" placeholder="Enter Password" subtitle="Forgot Password?"></TextField>

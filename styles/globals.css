@@ -18,3 +18,7 @@ a {
   font-family: Roboto;
   color: #51565a;
 }
+
+.width-100 {
+  width: 100%;
+}
